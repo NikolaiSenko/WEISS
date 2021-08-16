@@ -1,0 +1,29 @@
+.contacts {
+    background: $background-light;
+    .contacts__container {
+        
+        @include flexible ();
+
+        @include md {
+            justify-content: center; 
+         }
+
+        .contacts__image {
+            position: relative;
+            bottom: 100px;
+            width:100%;
+            max-width: 600px;
+            flex: 1 0 300px;
+            filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.2));
+
+            @include lg {
+                position:static;
+
+                padding:1em ;
+            }
+
+        }
+
+    }
+
+}

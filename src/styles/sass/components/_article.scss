@@ -1,0 +1,22 @@
+.article {
+    flex: 1 0 200px; 
+    width:25%;
+
+    
+    .article__title {
+        margin-bottom: 24px;
+
+        font:500 20px/30px Roboto,sans-serif;
+        color:$primary-color;
+    }
+    .article__text {
+        margin-bottom: 24px;
+
+        font:$text-font;
+        color:$text-color;
+    }
+}
+.article:not(:last-child) {
+            
+    margin-right:5%;
+}  

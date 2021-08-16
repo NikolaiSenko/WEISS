@@ -1,0 +1,27 @@
+.features {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: $background-light;
+    .features__description {
+        width:40%;
+
+        @include md {
+            width: 100%;            
+        }
+   
+        .features__title {
+            margin-bottom: 15px;
+
+            font:700 24px/44px Roboto,sans-serif;
+            color:$primary-color;
+        }
+        .features__text {
+            font:$text-font;
+            color:$text-color;
+        }
+    }
+    .features__cards {
+        @include flexible();       
+        padding-top: 5%;
+    }
+}

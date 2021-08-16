@@ -1,0 +1,99 @@
+.history {
+    position: relative;
+    top:10%;
+    background-image: linear-gradient(to bottom, $background-light 50%, #fff 50%);
+    .history__container {
+        position: relative;
+
+        @include flexible();
+
+        width:75%;
+
+        background: $primary-color; 
+        text-align: left;
+
+        @include md {
+            width: 100%;
+        }
+
+        .history__description {
+            padding: 15% 3% 15% 10%;
+            flex-basis:67%;
+            
+
+            .history__subtitle {
+                margin-bottom: 15px;
+            
+            }
+
+            .history__title {
+                margin-bottom: 15px;
+
+                font:$title-font;
+                color:#fff;
+            }
+
+            .history__text {
+                margin-bottom: 15px;
+
+                font:$text-font;
+                color:#fff;
+            }
+
+            .history__link {
+                position: relative;
+                color:#fff;
+            }
+            .history__link::before{
+                content: '';
+                position: absolute;
+                top: calc(50% - 3px);
+                right: 0;
+                width: 10px;
+                height: 2px;
+                background: #FFF;
+                border-radius: 2px;
+                transform: rotate(45deg);
+            }
+            
+            .history__link::after {
+                content: '';
+                position: absolute;
+                top: calc(50% + 3px);
+                right: 0;
+                width: 10px;
+                height: 2px;
+                background: #FFF;
+                border-radius: 2px;
+                transform: rotate(-45deg);
+            }
+        }
+        .history__image-wrapper {
+            position: absolute;
+            top:40%;
+            right: 0;
+            transform: translateX(40%);
+
+            @include lg {
+                position: absolute;
+                top:30%;
+                right: 0;
+                transform: translateX(50%);
+             }
+             @include md {
+                position:static;
+                transform: translateX(10%);
+            }            
+            
+            .history__image { 
+                
+                width: 100%;
+                max-width: 400px;
+        
+            }
+
+            
+        }
+        
+    }
+}

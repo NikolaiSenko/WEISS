@@ -1,0 +1,33 @@
+.card {
+    flex: 1 0 200px; 
+    width:25%;
+
+    .card__image {
+        width:100%;
+        max-width: 315px;
+        margin-bottom: 24px;
+
+    }
+    .card__description {
+        width:90%;
+
+    
+        .card__title {
+            margin-bottom: 24px;
+
+            font:500 20px/30px Roboto,sans-serif;
+            color:$primary-color;
+        }
+        .card__text {
+            margin-bottom: 24px;
+
+            font:$text-font;
+            color:$text-color;
+        }
+
+    }
+}
+.card:not(:last-child) {
+            
+    margin-right:5%;
+}  

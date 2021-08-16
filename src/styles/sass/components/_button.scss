@@ -1,0 +1,73 @@
+.button {
+    position: relative;
+
+    padding: 0.5em 2.5em 0.5em 1em;
+
+    font:$button-font;
+    color:white;
+    background:#FF9900;
+
+    border:none;
+    outline: none;
+    cursor: pointer;
+
+    transition: background 0.4s ease-in-out;
+}
+
+.button:hover {
+    background: #d35f00;
+    
+}
+
+.button:active {
+    background: #e07802 ;
+}
+
+.button--arrow:before{
+    content: '';
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 15px;
+    width: 13px;
+    height: 2px;
+    background: white;
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+
+.button--arrow:after {
+    content: '';
+    position: absolute;
+    top: calc(50% + 4px);
+    right: 15px;
+    width: 13px;
+    height: 2px;
+    background: white;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+}
+
+.button--mail:before{
+    content: '';
+    position: absolute;
+    top: calc(40% - 4px);
+    right: 10px;
+    width:20px;
+    height:13px;
+    border: 3px solid #fff;
+    
+
+}
+.button--mail:after{
+    content: '';
+    position: absolute;
+    top: calc(30% - 4px);
+    right: 15px;
+    width:13px;
+    height:13px;
+    border-left:3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(-45deg);
+    
+
+}

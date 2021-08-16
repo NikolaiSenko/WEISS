@@ -1,0 +1,45 @@
+@mixin flexible () {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@mixin xsm {
+    @media (max-width: #{$screen-xsm-min}) {
+        @content;
+    }
+ }
+ 
+// Small devices
+@mixin sm {
+    @media (max-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (max-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (max-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (max-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
+ @mixin rwd($screen) {
+    @media (max-width: $screen+'px') {
+        @content;
+    }
+ }

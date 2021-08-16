@@ -1,0 +1,19 @@
+.wrapper {   
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    max-width: 1440px;
+    margin: 0 auto;        
+}
+
+.container {
+    padding: 0 15px;
+// 576px window width and more
+    @include sm {
+        padding: 0 20px;
+    }
+// 992px window width and more
+    @include lg {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+}    

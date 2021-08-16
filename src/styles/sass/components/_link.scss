@@ -1,0 +1,34 @@
+.link {
+    padding-right: 12px;
+
+    font: $link-font;
+    color:$link-color;
+}
+
+.link--arrow {
+    position: relative;
+}
+
+.link--arrow:before{
+    content: '';
+    position: absolute;
+    top: calc(50% - 3px);
+    right: 0;
+    width: 10px;
+    height: 2px;
+    background: $link-color;
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+
+.link--arrow:after {
+    content: '';
+    position: absolute;
+    top: calc(50% + 3px);
+    right: 0;
+    width: 10px;
+    height: 2px;
+    background: $link-color;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+}

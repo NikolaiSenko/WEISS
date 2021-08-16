@@ -1,0 +1,29 @@
+.info-block {
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @include md {
+        flex-basis: 100%;
+    }
+    
+
+    .info-block__subtitle {        
+        margin-bottom: 1rem;         
+    }
+    .info-block__title {   
+        margin-bottom: 0.5em;
+
+        font:$title-font;
+        color:$primary-color;        
+    }
+    .info-block__text {
+        margin-bottom: 1em;
+
+        font:$text-font;
+        color:$text-color;
+    }
+    
+}
